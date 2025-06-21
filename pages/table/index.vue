@@ -19,6 +19,7 @@
 import { ref } from 'vue'
 import { ElButton } from 'element-plus'
 import LeviInput from '../../components/LeviInput.vue'
+import {EventEmiiter} from '../../utils/event'
 
 const inputRef = ref<InstanceType<typeof LeviInput>>()
 const inputValue = ref<string>('')
@@ -47,6 +48,19 @@ const handleClick = ()=>{
     console.log(getRepeatKey(obj));
     
 }
+
+const event = new EventEmiiter()
+event.on('request', (v) => {
+      console.log('request: error', v)
+})
+event.on('request', (v) => {
+      console.log('request: error2', v)
+})
+event.on('request2', (v) => {
+      console.log('request: success', v)
+})
+console.log(event._events);
+
 </script>
 
 
