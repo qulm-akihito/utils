@@ -1,0 +1,23 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "eamodio.gitlens",
+    // lint
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    // style
+    "stylelint.vscode-stylelint",
+    "pranaygp.vscode-css-peek",
+    "Zignd.html-css-class-completion",
+    // help
+    "wix.vscode-import-cost",
+    "Gruntfuggly.todo-tree",
+    "GitHub.copilot",
+    "antfu.goto-alias",
+    "usernamehw.errorlens",
+    "editorconfig.editorconfig",
+    "antfu.vite",
+    "vitest.explorer"
+  ]
+}

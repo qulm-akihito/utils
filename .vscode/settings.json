@@ -1,0 +1,103 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "javascript.format.semicolons": "remove",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prettier.arrowParens": "avoid",
+  "prettier.jsxSingleQuote": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "stylelint.packageManager": "pnpm",
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "less", "postcss", "scss", "vue", "sass"],
+  "eslint.format.enable": true,
+
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never",
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.formatOnSave": true,
+
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": false,
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "errorLens.enabledDiagnosticLevels": ["warning", "error"],
+  "errorLens.excludeBySource": ["cSpell", "Grammarly", "eslint"],
+
+  "search.exclude": {
+    "**/.git": true,
+    "**/.github": true,
+    "**/.nuxt": true,
+    "**/.output": true,
+    "**/.pnpm": true,
+    "**/.vscode": true,
+    "**/.yarn": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/logs": true,
+    "**/node_modules": true,
+    "**/out/**": true,
+    "**/package-lock.json": true,
+    "**/pnpm-lock.yaml": true,
+    "**/tmp": true,
+    "**/yarn.lock": true
+  },
+  "cssPeek.peekToExclude": ["**/node_modules/**", "**/bower_components/**", "**/dist/**"],
+
+  "todo-tree.tree.autoRefresh": false,
+  "cSpell.ignoreWords": [
+    "Cacheable",
+    "Pinia",
+    "Qiniu",
+    "VITE",
+    "Vant",
+    "commitlint",
+    "cropperjs",
+    "downloadjs",
+    "echarts",
+    "gaopei",
+    "peixun",
+    "qrcode",
+    "qsxt",
+    "unplugin",
+    "vueuse",
+    "vuex",
+    "weixin",
+    "xgplayer",
+    "stylelint",
+    "Qingshu",
+    "Coursebag"
+  ],
+  "cSpell.words": ["cascader", "composables", "courseware", "nuxt", "nuxtjs", "swipers", "unocss"],
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
+}
