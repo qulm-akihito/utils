@@ -1,8 +1,8 @@
 import { isFunction } from './is'
 
-const HASH_UNDEFINED = '__qs_cache_undefined__'
+const HASH_UNDEFINED = '__levi_cache_undefined__'
 
-export interface QsCacheable {
+export interface LeviCacheable {
   get: (key: string) => any
   set: (key: string, value: any, expireTime?: number) => boolean
   has: (key: string) => boolean
@@ -11,16 +11,16 @@ export interface QsCacheable {
   each: (cb: (value: any, key: string) => void) => this
   readonly size: number
 }
-export interface QsCacheConstructor {
-  new(collection?: Record<string, any>): QsCacheable
-  new(collection?: Record<string, any>, ...options: any[]): QsCacheable
+export interface LeviCacheConstructor {
+  new(collection?: Record<string, any>): LeviCacheable
+  new(collection?: Record<string, any>, ...options: any[]): LeviCacheable
 }
 
 /**
  * key: string
  * value: any
  */
-export class QsCache implements QsCacheable {
+export class LeviCache implements LeviCacheable {
   private _data: Record<string, any>
   private _size: number
 

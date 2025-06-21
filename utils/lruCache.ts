@@ -1,7 +1,7 @@
 import { DAY_IN_MS } from './date'
-import { QsExpireCache } from './expireCache'
+import { LeviExpireCache } from './expireCache'
 
-export class QsLruExpireCache extends QsExpireCache {
+export class LeviLruExpireCache extends LeviExpireCache {
   _lruDelete() {
     let minHits = Number.MAX_SAFE_INTEGER
     let targetKey = ''

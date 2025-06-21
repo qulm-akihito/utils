@@ -1,7 +1,7 @@
 import { DAY_IN_MS } from './date'
 import { isFunction } from './is'
-import type { QsCacheConstructor, QsCacheable } from './cache'
-import { QsCache } from './cache'
+import type { LeviCacheConstructor, LeviCacheable } from './cache'
+import { LeviCache } from './cache'
 
 const isExpired = (time: number, now: number) => time !== 0 && time < now
 
@@ -20,22 +20,22 @@ interface ExpireOption {
    */
   defaultExpire?: number
 }
-export interface QsExpireCacheConstructor extends QsCacheConstructor {
-  new(collection?: Record<string, any>, option?: ExpireOption): QsCacheable
+export interface LeviExpireCacheConstructor extends LeviCacheConstructor {
+  new(collection?: Record<string, any>, option?: ExpireOption): LeviCacheable
 }
 
-export class QsExpireCache implements QsCacheable {
+export class LeviExpireCache implements LeviCacheable {
   protected _limit: number
   protected _now: Function
   protected _defaultExpire: number
-  protected _data: QsCache
+  protected _data: LeviCache
 
   constructor(collection?: Record<string, any>, option?: ExpireOption) {
     const { limit = 0, now = Date.now, defaultExpire = 0 } = option || {}
     this._limit = Number(limit) || 0
     this._now = now
     this._defaultExpire = defaultExpire
-    this._data = new QsCache()
+    this._data = new LeviCache()
     if (collection != null) {
       Object.keys(collection).forEach(k => this.set(k, collection[k]))
     }
